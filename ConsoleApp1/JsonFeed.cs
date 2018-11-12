@@ -42,7 +42,7 @@ namespace ConsoleApp1
                 
 			}
 
-            return Task.FromResult(client.GetStringAsync(url).Result).Result.ToString() ;
+            return Task.FromResult(client.GetStringAsync(url).Result).Result.ToString();
 		}
  
 		public static dynamic Getnames()
@@ -58,7 +58,7 @@ namespace ConsoleApp1
 			client = new HttpClient();
 			client.BaseAddress = new Uri(_url);
 
-			return Task.FromResult(client.GetStringAsync("categories").Result).Result.ToString() ;
+			return Task.FromResult(client.GetStringAsync("categories").Result).Result.ToString();
 		}
     }
 }
